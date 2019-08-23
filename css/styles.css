@@ -1,0 +1,226 @@
+@charset "utf-8";
+@font-face
+{
+	font-family: 'DancingScript Regular';
+	src: url('../fuente/DancingScript-Regular.ttf') format('truetype');
+}
+
+/* CSS Document */
+	
+body
+{
+	background-color: #02010a;
+	text-align: center;
+	animation: entrada 3s;
+}
+
+@-webkit-keyframes entrada
+{
+	0%
+	{margin-top: 150%;}
+	60%
+	{margin-top: -5%;}
+	100%
+	{margin-top: 0%;}	
+}
+
+/* Vista Desktop */
+
+@media (min-width: 901px){
+	#contenido
+		{
+			display: inline-block;
+			width: 900px;
+		}
+		.titulo
+		{
+			color: white;
+			text-shadow: 2px 2px 2px #02010A;
+			text-align: center;
+			width: 450px;
+			font-family: "DancingScript Regular";
+		}
+		header
+		{
+			background-color:  #5B7989;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		h2
+		{
+			width: 450px;
+			text-align: center;
+		}
+		.menu a
+		{
+			text-decoration: none;
+			text-shadow: 2px 2px 2px #02010A;
+			width: 150px;
+			font-family: "DancingScript Regular";
+			color: white;
+		}
+		footer
+		{
+			background-color: #C6d5c5;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			display: flex;
+			flex-grow: 4;
+			width: 100%;
+			font-family: "DancingScript Regular";
+		}
+		footer div
+		{
+			width: 25%;
+			align-content: center;
+		}
+
+		.redes
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 35px;
+		}
+		.galeria_p
+		{
+			display: flex;
+			flex-flow: wrap;
+		}
+		.paisaje
+	{
+		max-width: 300px;
+	}
+		
+		
+}
+
+
+#central
+{
+	background-color: #82c3a6; 
+	padding: 10px;
+	display: flex;
+	flex-grow: 1;
+}
+#sec
+{
+	background-color: #d5c75f;
+	border: 1px;
+	display: flex;
+	flex-grow: 2;
+}
+.sec1 img:hover
+{
+	transform: rotate(10deg);
+	border: 2px dotted;
+	box-shadow: 10px 10px 5px 0px #82c3a6;
+}
+.sec2 img:hover
+{
+	
+	border: 2px dotted;
+	box-shadow: 10px 10px 5px 0px #82c3a6;
+	transform: translateX(20px);
+	transform: translateY(-5px);
+}
+#foto_i
+{
+	max-width: 80%;
+	margin: 10%;
+}
+.foto_p
+{
+	max-width: 80%;
+	margin: 10%;
+}
+#f1
+{
+	webkit-filter:blur(10px);
+	filter:blur(10px);
+}
+#f2,#f4,#f6
+{
+	webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+#f3
+{
+	webkit-filter:sepia(90%);
+	filter:sepia(90%);
+}
+div.social
+{
+	text-align: justify;
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+
+
+
+/* Vista Movil*/
+
+@media (max-width: 900px){
+	#contenido
+		{
+			display: inline-block;
+			width: 100%;
+		}
+		.titulo
+		{
+			color: white;
+			text-shadow: 2px 2px 2px #02010A;
+			text-align: center;
+			width: 100%;
+			font-family: "DancingScript Regular";
+		}
+		header
+		{
+			background-color:  #5B7989;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 10px;
+
+		}
+		h2
+		{
+			width: 100%;
+			text-align: center;
+		}
+		.menu a
+		{
+			text-decoration: none;
+			text-shadow: 2px 2px 2px #02010A;
+			width: 30%;
+			font-family: "DancingScript Regular";
+			color: white;
+		}
+		footer
+		{
+			background-color: #C6d5c5;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: "DancingScript Regular";
+		}
+		footer div
+		{
+			width: 100%;
+			align-content: center;
+		}
+
+		.redes
+		{
+			height: 35px;
+			width: 35px;
+			border-radius: 35px;
+		}
+}
